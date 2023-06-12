@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spletna stran kjer se lahko naučiš o osnovah financ in investiranja.">
+    <meta name="author" content="Tim Blažič">
+    <meta name="keywords" content="Wealthsense, spletišče, website, finance, investiranje, Bootstrap">
+    <link rel="icon" type="image/x-icon" href="/slike/favicon.ico">
+    <title>Wealthsense</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-..."></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-xzAloQkRAVz9gbo1cf9S3Lj+NyHJrI4FJg2F9+bSfY/nLfkv8sjogGGbT7WvQOe8+HFWbt6AvvKJm9F8d9mJGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Required Bootstrap JavaScript files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
+  
+
+  
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Wealthsense</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Domov</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Osnove</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/osnove/osnove.html">Osnove</a></li>
+                  <li><a class="dropdown-item" href="/osnove/davki.html">Davki</a></li>
+                  <li><a class="dropdown-item" href="/osnove/vrsteNalozb.html">Vrste Naložb</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Investiranje</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="investiranje.html">Osnove</a></li>
+                  <li><a class="dropdown-item" href="orodja.html">Orodja</a></li>
+                  <li><a class="dropdown-item" href="analiza.html">Analiza</a></li>
+                  <li><a class="dropdown-item" href="strategije.html">Strategije</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ponudba.html">Ponudba</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/novice.html">Novice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-banner-area page-service" id="page-banner">
+        <div class="overlay dark-overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+              <div class="banner-content content-padding">
+                <h1 class="text-white">Investiranje za telebane</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <img class="rounded-square shadow-lg" src="/slike/investiranje/osnove/novica5.jpg" alt="Začetek z investiranjem" width="500" height="500" style="object-fit: cover;">
+          </div>
+          <div class="col-lg-6">
+            <h2>Začetek z investiranjem</h2>
+            <p>Investiranje je močno orodje za povečanje premoženja in doseganje finančnih ciljev. Ne glede na to, ali ste začetnik ali že imate nekaj izkušenj, je pomembno, da imate trdno osnovo. Tukaj je nekaj ključnih konceptov, ki jih morate razumeti:</p>
+            <ul>
+              <li>Kamata na obresti: Izkoristite obrestno obrestovanje, kjer vaše naložbe ustvarjajo dobiček, ta dobiček pa ustvarja dodatni dobiček.</li>
+              <li>Sredstvene razrede: Spoznajte različne sredstvene razrede, kot so delnice, obveznice, nepremičnine in surovine, ter kako ponujajo različne ravni tveganja in donosa.</li>
+              <li>Tveganje in donos: Razumite razmerje med tveganjem in potencialnim donosom. Splošno velja, da imajo visoko tvegane naložbe potencial za višje donose.</li>
+              <li>Časovni horizont: Določite časovni horizont vaše naložbe, kar se nanaša na čas, v katerem načrtujete obdržati svoj denar, preden ga boste potrebovali.</li>
+              <li>Diverzifikacija: Razpršite svoje naložbe med različna sredstva in sektorje, da zmanjšate tveganje. Diverzifikacija pomaga zaščititi vaš portfelj pred vplivom uspešnosti posamezne naložbe.</li>
+              <li>Stroški in provizije: Bodite pozorni na stroške, povezane z investiranjem, kot so transakcijske provizije, upravljavske provizije in davki. Zmanjšanje stroškov lahko izboljša celotni donos vaših naložb.</li>
+            </ul>
+            <p>Ne pozabite, da investiranje vključuje tveganja, zato je pomembno temeljito raziskati in upoštevati svojo toleranco za tveganje pred sprejemanjem naložbenih odločitev. Začnite graditi svoje znanje o investiranju že danes in prevzemite nadzor nad svojo finančno prihodnostjo!</p>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="video-container">
+          <iframe class="shadow-lg" width="560" height="315" src="https://www.youtube.com/embed/Pumv1eWpvxU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="text-center a">
+            <h2>Osnove investiranja</h2>
+            <p>V tem videu Andrej P. Škraba predstavi: Osnovni principi investiranja in prikaz DCA metode na primeru Bitcoina (BTC) in Apple (AAPL) delnice za zadnjih nekaj let.</p>
+            <p class="avtorstvo">Avtorstvo: Andrej P. Škraba</p>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+  
+        
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-square shadow-lg" src="/slike/investiranje/osnove/novica6.jpg" alt="Naložbene strategije" width="300" height="200" style="object-fit: cover;">
+            <h3>Naložbene strategije</h3>
+            <p>Raziščite različne naložbene strategije in sprejemajte informirane odločitve za maksimizacijo donosov.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Več izvedite &raquo;</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img class="rounded-square shadow-lg" src="/slike/investiranje/osnove/slide1.png" alt="Upravljanje tveganja" width="300" height="200" style="object-fit: cover;">
+            <h3>Upravljanje tveganja</h3>
+            <p>Razumite in omilite naložbena tveganja za zaščito svojega portfelja.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Več izvedite &raquo;</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img class="rounded-square shadow-lg" src="/slike/investiranje/osnove/portfolio.jpg" alt="Diverzifikacija portfelja" width="300" height="200" style="object-fit: cover;">
+            <h3>Diverzifikacija portfelja</h3>
+            <p>Diversificirajte svoje naložbe, da zmanjšate tveganje in povečate potencialne donose.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Več izvedite &raquo;</a></p>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <img class="rounded-square shadow-lg" src="/slike/investiranje/osnove/slide2.png" alt="Začetek z investiranjem" width="500" height="400">
+          </div>
+          <div class="col-lg-6">
+            <h2>Investiranje: Osnove in ključni koncepti</h2>
+            <p>Investiranje je močno orodje za povečanje premoženja in doseganje finančnih ciljev. Ne glede na to, ali ste začetnik ali že imate nekaj izkušenj, je pomembno, da imate trdno osnovo. Tukaj je nekaj ključnih konceptov, ki jih morate razumeti:</p>
+            <ul>
+              <li>Razumevanje tveganja: Investiranje vključuje določeno mero tveganja. Pomembno je razumeti različne vrste tveganj, kot so tržno tveganje, likvidnostno tveganje in tveganje izgube. Na podlagi tega lahko določite svojo toleranco za tveganje in izberete naložbe, ki ustrezajo vašemu profilu tveganja.</li>
+              <li>Cilji in časovni horizont: Pred investiranjem si postavite jasne finančne cilje. Določite, kaj želite doseči s svojimi naložbami in v kakšnem časovnem okviru. To vam bo pomagalo izbrati ustrezne strategije in naložbene instrumente.</li>
+              <li>Diversifikacija portfelja: Razpršite svoje naložbe med različne vrste sredstev, kot so delnice, obveznice, nepremičnine in surovine. Diversifikacija zmanjšuje tveganje, saj se izgube na enem področju lahko izravnajo z dobitki na drugem področju.</li>
+              <li>Razumevanje donosa: Spoznajte različne vrste donosov, kot so kapitalski donos, dividendni donos in obrestni donos. Razumeti morate, kako se izračunavajo in kako vplivajo na vaše naložbe.</li>
+              <li>Spremljanje in prilagajanje: Redno spremljajte svoje naložbe in bodite pripravljeni prilagajati svojo strategijo glede na spremembe na trgu. Bodite seznanjeni z novicami in gospodarskimi trendi, ki lahko vplivajo na vaše naložbe.</li>
+              <li>Stroški in provizije: Upoštevajte stroške, povezane z investiranjem, kot so transakcijske provizije, upravljavske provizije in davki. Visoki stroški lahko zmanjšajo vaš celotni donos, zato izberite naložbe z razumnimi stroški.</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Investiranje: Osnove za uspešno vlaganje</h2>
+            <p>Investiranje je ključno za rast premoženja in doseganje finančnih ciljev. Ne glede na vašo izkušenost je pomembno, da imate trdno osnovo. Tukaj je nekaj ključnih konceptov, ki jih morate razumeti:</p>
+            <ul>
+              <li>Tveganje in donos: Investiranje vedno vključuje tveganje. Pomembno je razumeti razmerje med tveganjem in potencialnim donosom. Višje tveganje običajno prinaša večje možnosti za donos, vendar tudi večje možnosti za izgubo.</li>
+              <li>Cilji in strategije: Pred začetkom investiranja si postavite jasne cilje. Ali želite dolgoročno varčevati za upokojitev, financirati izobraževanje otrok ali doseči druge finančne mejnike? Na podlagi teh ciljev izberite ustrezne naložbene strategije.</li>
+              <li>Raznolikost portfelja: Razpršite svoje naložbe med različne vrste sredstev in trge. Diversifikacija pomaga zmanjšati tveganje, saj izgube na enem področju lahko izravnate z dobitki na drugem področju.</li>
+              <li>Temeljito raziskovanje: Preden vlagate, se podrobno seznanite s potencialnimi naložbami. Preučite njihove zgodovinske donose, tveganja in pričakovane donose. Bodite seznanjeni z gospodarskimi trendi, ki lahko vplivajo na trge.</li>
+              <li>Spremljanje in prilagajanje: Redno spremljajte svoje naložbe in prilagajajte svojo strategijo glede na spremembe na trgu. Bodite pozorni na novice in dogodke, ki bi lahko vplivali na vaše naložbe.</li>
+              <li>Stroški in donosnost: Preučite stroške povezane z investiranjem, kot so transakcijske provizije, upravljavske provizije in davki. Zavedajte se, da visoki stroški lahko zmanjšajo vaš celotni donos, zato izberite naložbe z razumnimi stroški.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img class="rounded-square shadow-lg" src="/slike/investiranje/osnove/novica6.jpg" alt="Investiranje" width="500" height="500">
+          </div>
+          <p>Investiranje zahteva čas, raziskovanje in vztrajnost. S pridobivanjem osnovnega znanja ter z dobrim načrtovanjem in izvajanjem strategij lahko dosežete svoje finančne cilje. Ne odlašajte, začnite investirati že danes in ustvarite boljšo finančno prihodnost.</p>
+          
+        </div>
+        
+      </div>
+    </main>
+    <footer class="bg-light text-center py-3" style="width: 100%;">
+      <p>&copy; 2023 Wealthsense. Vse pravice pridržane.</p>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>

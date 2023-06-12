@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spletna stran kjer se lahko naučiš o osnovah financ in investiranja.">
+    <meta name="author" content="Tim Blažič">
+    <meta name="keywords" content="Wealthsense, spletišče, website, finance, investiranje, Bootstrap">
+    <link rel="icon" type="image/x-icon" href="/slike/favicon.ico">
+    <title>Wealthsense</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Wealthsense</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Domov</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Osnove</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="osnove/osnove.html">Osnove</a></li>
+                  <li><a class="dropdown-item" href="osnove/davki.html">Davki</a></li>
+                  <li><a class="dropdown-item" href="osnove/vrsteNalozb.html">Vrste Naložb</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"> 
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Investiranje</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="investiranje/investiranje.html">Osnove</a></li>
+                  <li><a class="dropdown-item" href="investiranje/orodja.html">Orodja</a></li>
+                  <li><a class="dropdown-item" href="investiranje/analiza.html">Analiza</a></li>
+                  <li><a class="dropdown-item" href="investiranje/strategije.html">Strategije</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ponudba.html">Ponudba</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="novice.html">Novice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="page-banner-area page-service" id="page-banner">
+        <div class="overlay dark-overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+              <div class="banner-content content-padding">
+                <h1 class="text-white">Novice</h1>
+                <p>Poglej si najnovejše novice o trgu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-heading">Danes</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="news-card big-card">
+              <img class="news-image" src="/slike/novice/novica1.jpg" alt="News Image">
+              <h3 class="news-title">Kriptovalute dosegle nove rekordne vrednosti</h3>
+              <p class="news-date">May 18, 2023</p>
+              <p class="news-summary">V zadnjem tednu so kriptovalute dosegale neverjetne rezultate, s preseženimi rekordnimi vrednostmi, kar kaže na povečano zanimanje institucionalnih vlagateljev in rast sprejemanja kriptovalut s strani podjetij.</p>
+              <a class="read-more-link" href="#">Izvedi več</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img class="news-image" src="/slike/novice/novica2.jpg" alt="News Image">
+              <h3 class="news-title">Rast cen zlata ponuja priložnosti za vlagatelje</h3>
+              <p class="news-date">May 13, 2023</p>
+              <p class="news-summary">Cene zlata so se v zadnjem obdobju stabilizirale in začele rasti, kar je privabilo pozornost vlagateljev, ki iščejo varne naložbene možnosti v času gospodarskih negotovosti.</p>
+              <a class="read-more-link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img class="news-image" src="/slike/novice/novica3.jpg" alt="News Image">
+              <h3 class="news-title">Podjetje XYZ dosega rekordne dobičke v zadnjem kvartalu</h3>
+              <p class="news-date">May 13, 2023</p>
+              <p class="news-summary">Podjetje XYZ je objavilo izjemne rezultate poslovanja v zadnjem kvartalu, saj je doseglo rekordne dobičke, ki jih je privedla uspešna strategija širjenja na nove trge in inovativni produkti.</p>
+              <a class="read-more-link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img class="news-image" src="/slike/novice/novica4.jpg" alt="News Image">
+              <h3 class="news-title">Bitcoin presegel 30.000 dolarjev - nova meja dosežena</h3>
+              <p class="news-date">May 13, 2023</p>
+              <p class="news-summary">Kriptovaluta Bitcoin je dosegla zgodovinski mejnik, saj je presegla vrednost 30.000 dolarjev na enoto, kar je rezultat naraščajočega zanimanja vlagateljev za digitalne valute.</p>
+              <a class="read-more-link" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-heading">Ta teden</h2>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img class="news-image" src="/slike/novice/novica5.jpg" alt="News Image">
+              <h3 class="news-title">Trg delnic dosega nove vrhove - optimizem med vlagatelji</h3>
+              <p class="news-date">May 15, 2023</p>
+              <p class="news-summary">Trg delnic je dosegel nove vrhove, pri čemer so se indeksi dvignili na rekordne ravni, kar odraža optimizem med vlagatelji glede okrevanja gospodarstva in podjetniških rezultatov.</p>
+              <a class="read-more-link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img class="news-image" src="/slike/novice/novica6.jpg" alt="News Image">
+              <h3 class="news-title">Rast borznih indeksov - vlagatelji zadovoljni</h3>
+              <p class="news-date">May 13, 2023</p>
+              <p class="news-summary">Borzni indeksi so dosegli rast v preteklem obdobju, kar je prineslo zadovoljstvo med vlagatelji, ki so beležili rast vrednosti svojih naložb na borznem trgu.</p>
+              <a class="read-more-link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img class="news-image" src="/slike/novice/novica7.jpg" alt="News Image">
+              <h3 class="news-title">Podjetje ABC napoveduje novo izdajo delnic</h3>
+              <p class="news-date">May 13, 2023</p>
+              <p class="news-summary">Podjetje ABC je objavilo namero o izdaji novih delnic, s čimer si želi pridobiti svež kapital za financiranje rasti, razvoj novih produktov in širjenje na nove trge.</p>
+              <a class="read-more-link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img class="news-image" src="/slike/novice/novica7.jpg" alt="News Image">
+              <h3 class="news-title">Kripto trg doživlja močan vzpon - investitorji privabljajo visoki donosi</h3>
+              <p class="news-date">May 13, 2023</p>
+              <p class="news-summary">Kripto trg je v zadnjem obdobju doživel izjemno rast, pri čemer so investitorji privlačeni z visokimi donosi in možnostmi za ustvarjanje dobička v digitalnem ekosistemu.</p>
+              <a class="read-more-link" href="#">Read More</a>
+            </div>
+          </div>
+          
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    </main>
+    <footer class="bg-light text-center py-3" style="width: 100%;">
+      <p>&copy; 2023 Wealthsense. Vse pravice pridržane.</p>
+    </footer>
+  </body>

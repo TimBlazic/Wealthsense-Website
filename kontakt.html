@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spletna stran kjer se lahko naučiš o osnovah financ in investiranja.">
+    <meta name="author" content="Tim Blažič">
+    <meta name="keywords" content="Wealthsense, spletišče, website, finance, investiranje, Bootstrap">
+    <link rel="icon" type="image/x-icon" href="/slike/favicon.ico">
+    <title>Wealthsense</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Wealthsense</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Domov</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Osnove</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="osnove/osnove.html">Osnove</a></li>
+                  <li><a class="dropdown-item" href="osnove/davki.html">Davki</a></li>
+                  <li><a class="dropdown-item" href="osnove/vrsteNalozb.html">Vrste Naložb</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"> 
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Investiranje</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="investiranje/investiranje.html">Osnove</a></li>
+                  <li><a class="dropdown-item" href="investiranje/orodja.html">Orodja</a></li>
+                  <li><a class="dropdown-item" href="investiranje/analiza.html">Analiza</a></li>
+                  <li><a class="dropdown-item" href="investiranje/strategije.html">Strategije</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ponudba.html">Ponudba</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="novice.html">Novice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+<main>
+  <div class="page-banner-area page-service" id="page-banner">
+    <div class="overlay dark-overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+          <div class="banner-content content-padding">
+            <h1 class="text-white">Stopi v Stik z nami.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <section class="contact-us" id="contact">
+    
+
+       <div class="row">
+
+         <div class="contact-details col-md-6 ">
+           <h3 class="mb-3">Kontakt</h3>
+           <ul class="contact-short-info mt-4">
+             <li class="mb-3">
+               <i class="tf-ion-ios-home"></i>
+               <span>Topniška cesta 30a, Ljubljana 1000, Slovenia</span>
+             </li>
+             <li class="mb-3">
+               <i class="tf-ion-android-phone-portrait"></i>
+               <span>Phone: +386 123 456 789</span>
+             </li>
+             <li class="mb-3">
+               <i class="tf-ion-android-globe"></i>
+               <span>Fax: +386 987 654 321</span>
+             </li>
+             <li>
+               <i class="tf-ion-android-mail"></i>
+               <span>Email: informacije@gmail.com</span>
+             </li>
+           </ul>
+
+         </div>
+
+         <div class="contact-form col-md-6 ">
+           <form id="contact-form" method="post" role="form">
+             <div class="form-group mb-4">
+               <input type="text" placeholder="Ime" class="form-control" name="name" id="name" required>
+             </div>
+  
+             <div class="form-group mb-4">
+               <input type="email" placeholder="Email" class="form-control" name="email" id="email" required>
+             </div>
+  
+             <div class="form-group mb-4">
+               <input type="text" placeholder="Zadeva" class="form-control" name="subject" id="subject" required>
+             </div>
+  
+             <div class="form-group mb-4">
+               <textarea rows="6" placeholder="Sporočilo" class="form-control" name="message" id="message" required></textarea>
+             </div>
+             <div id="cf-submit">
+               <input type="submit" id="contact-submit" class="btn btn-primary btn-block" value="Pošlji">
+             </div>
+  
+           </form>
+         </div>
+
+  
+       </div> 
+     </div> 
+   </section>
+
+  <div id="map"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script>
+    const position = [46.056946, 14.505751]; 
+    const map = L.map('map').setView(position, 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+    const marker = L.marker(position).addTo(map);
+  </script>
+
+  <footer class="bg-light text-center py-3" style="width: 100%;">
+    <p>&copy; 2023 Wealthsense. Vse pravice pridržane.</p>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spletna stran kjer se lahko naučiš o osnovah financ in investiranja.">
+    <meta name="author" content="Tim Blažič">
+    <meta name="keywords" content="Wealthsense, spletišče, website, finance, investiranje, Bootstrap">
+    <link rel="icon" type="image/x-icon" href="/slike/favicon.ico">
+    <title>Wealthsense</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-..."></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-xzAloQkRAVz9gbo1cf9S3Lj+NyHJrI4FJg2F9+bSfY/nLfkv8sjogGGbT7WvQOe8+HFWbt6AvvKJm9F8d9mJGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Required Bootstrap JavaScript files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
+  
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Wealthsense</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Domov</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Osnove</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/osnove/osnove.html">Osnove</a></li>
+                  <li><a class="dropdown-item" href="/osnove/davki.html">Davki</a></li>
+                  <li><a class="dropdown-item" href="/osnove/vrsteNalozb.html">Vrste Naložb</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Investiranje</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="investiranje.html">Osnove</a></li>
+                  <li><a class="dropdown-item" href="#">Orodja</a></li>
+                  <li><a class="dropdown-item" href="analiza.html">Analiza</a></li>
+                  <li><a class="dropdown-item" href="strategije.html">Strategije</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ponudba.html">Ponudba</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/novice.html">Novice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      
+      <div class="page-banner-area page-service" id="page-banner">
+        <div class="overlay dark-overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+              <div class="banner-content content-padding">
+                <h1 class="text-white">Orodja za investiranje</h1>
+                <p>Orodja za investiranje pripomorejo investitorjem pri boljši analizi trga, sledenju in upravljanju naložb ter sprejemanju informiranih odločitev. Zagotavljajo podrobne informacije, analitična orodja in novice, kar omogoča boljše razumevanje tržnih gibanj in optimizacijo investicijskega pristopa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/slike/investiranje/orodja/bankrate.png" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Bankrate</h1>
+            <p class="lead">Bankrate je spletna stran, ki ponuja širok nabor informacij in orodij za osebe, ki se ukvarjajo z investiranjem. Na njej lahko najdete uporabne vire, kot so novice o trgu, analize in nasvete strokovnjakov. Prav tako omogoča primerjavo različnih finančnih izdelkov, kot so kreditne kartice, bančni računi in hipoteke. Bankrate vam pomaga pri sprejemanju informiranih finančnih odločitev in optimizaciji vaših naložbenih strategij.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a class="btn btn-primary btn-lg px-4 me-md-2" href="https://www.bankrate.com/">Bankrate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Sharesight</h1>
+            <p class="lead">Share Sight je vodilna platforma za sledenje in upravljanje naložb, ki je zasnovana tako za posamezne vlagatelje kot tudi za profesionalne upravitelje premoženja. Omogoča vam celovit pregled nad vašimi naložbami, ne glede na to, ali gre za delnice, sklade, obveznice ali druge vrste naložb.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a class="btn btn-primary btn-lg px-4 me-md-2" href="https://www.sharesight.com/">Sharesight</a>
+            </div>
+          </div>
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/slike/investiranje/orodja/sharesight.png" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/slike/investiranje/orodja/tradingview.png" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">TradingView</h1>
+            <p class="lead">TradingView pa je priljubljena platforma za analizo trga in trgovalne ideje. S svojimi grafičnimi orodji in tehničnimi kazalniki vam TradingView omogoča izvajanje tehnične analize in spremljanje trgovinskih priložnosti. Prav tako omogoča interakcijo in deljenje idej s širšo skupnostjo trgovcev.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a class="btn btn-primary btn-lg px-4 me-md-2" href="https://www.tradingview.com/">TradingView</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Wealthsense. Vse pravice pridržane.</p>
+      </footer>
+    
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+    
+    </main>
+
+
+
+
+
+
+
+  
+</body>
+</html>
